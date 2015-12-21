@@ -1,0 +1,16 @@
+{
+  "name": "performance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "1.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python2.7 -m SimpleHTTPServer 8080",
+    "lint": "eslint '**/*.js' --quiet=true"
+  },
+  "author": "",
+  "license": "ISC"
+}
