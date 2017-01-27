@@ -11,6 +11,10 @@
 ![Repaint Timeline Example](javascript/reflow-repaint/reflow-repaint.png)
 
 
+
+**Want a definitive list of which CSS properties trigger layout, paint, or composite?** Check out [CSS Triggers](https://csstriggers.com/).
+
+
 ## Events
 
 - **Parse HTML**. Document Object Model construction (DOM)
@@ -25,13 +29,16 @@
 
 ## Vocabulary
 
-FOUC - Flash of Unstyled Content
+- FOUC - Flash of Unstyled Content
+- jank - is any stuttering, juddering or just plain halting that users see when a site or app isn't keeping up with the refresh rate
 
 
 ## Resources
 - [Constructing the Object Model](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model)
 - [Rendering: repaint, reflow/relayout, restyle](http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/)
 - [Render-tree Construction, Layout, and Paint](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction)
+- [Jankfree](http://jankfree.org/)
+- [Use only transform and opacity for animation](https://aerotwist.com/blog/flip-your-animations/)
 
 
 
