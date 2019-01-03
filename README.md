@@ -48,6 +48,8 @@
 
 [contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain) - The contain property allows an author to indicate that an element and its contents are, as much as possible, independent of the rest of the document tree. This allows the browser to recalculate layout, style, paint, size, or any combination of them for a limited area of the DOM and not the entire page. This property is useful on pages that contain a lot of widgets that are all independent as it can be used to prevent one widget's CSS rules from changing other things on the page.
 
+[pointer-events: none](https://www.thecssninja.com/css/pointer-events-60fps) -  Allow avoiding unnecessary paints through disabling hover effects as the user scrolls
+
 
 ## Strategies
 
