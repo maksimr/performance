@@ -39,6 +39,7 @@
 - [Render-tree Construction, Layout, and Paint](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction)
 - [Jankfree](http://jankfree.org/)
 - [Use only transform and opacity for animation](https://aerotwist.com/blog/flip-your-animations/)
+- [about:tracing — Chrome’s lower-level Tracing tool](https://docs.google.com/presentation/d/1Lq2DD28CGa7bxawVH_2OcmyiTiBn74dvC6vn2essroY/edit#slide=id.g1a504e63c9_2_84)
 
 
 
