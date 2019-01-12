@@ -4,29 +4,30 @@
 - 🍆 - Rendering
 - 🍏 - Painting
 
+- *FOUC* - Flash of Unstyled Content
+- *jank* - is any stuttering, juddering or just plain halting that users see when a site or app isn't keeping up with the refresh rate
+
 
 **TL;DR**
-- 🔵 Bytes → characters → tokens → nodes → object model.
 - 🔵 HTML markup is transformed into a Document Object Model (DOM)
 - 🍆 CSS markup is transformed into a CSS Object Model (CSSOM).
--  DOM and CSSOM are independent data structures.
+- 🍆 The DOM and CSSOM trees are combined to form the *Render Tree*.
+- 🍆 Layout computes the exact position and size of each object.
+- 🍏 The last step is paint, which takes in the final render tree and renders the pixels to the screen.
 
 
 ## Document Object Model (DOM)
-
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/full-process.png)
 
 
 ## CSS Object Model (CSSOM)
+By default, CSS is treated as a render blocking resource, which means that the browser won't render any processed content until the CSSOM is constructed
 
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-construction.png)
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-tree.png)
 
 ## Render-tree (Reflow)
-- 🍆 The DOM and CSSOM trees are combined to form the render tree.
-- 🍆 Render tree contains only the nodes required to render the page.
-- 🍆 Layout computes the exact position and size of each object.
-- 🍏 The last step is paint, which takes in the final render tree and renders the pixels to the screen.
+Render tree contains only the nodes required to render the page.
 
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png)
 
@@ -38,42 +39,9 @@ The output of the layout process is a **box model**, which precisely captures th
 
 - 🔵 **Parse HTML** - HTML markup is transformed into a Document Object Model (*DOM*)
 - 🍆 **Recalculate Style** - CSS markup is transformed into a CSS Object Model (*CSSOM*)
-- 🍆 **Layout** - The "Layout" event captures the *render tree* construction, position, and size calculation
+- 🍆 **Layout** - *Render tree* construction, position, and size calculation
 - 🍏 **Paint** - Convert the render tree to pixels on the screen.
 
-## Repaint
-
-![Repaint Timeline Example](javascript/repaint/repaint.png)
-
-
-## Reflow
-![Repaint Timeline Example](javascript/reflow/reflow.png)
-
-
-## Reflow and Repaint
-![Repaint Timeline Example](javascript/reflow-repaint/reflow-repaint.png)
-
-
-
-**Want a definitive list of which CSS properties trigger layout, paint, or composite?** Check out [CSS Triggers](https://csstriggers.com/).
-
-
-## Events
-
-- **Parse HTML**. Document Object Model construction (DOM)
-   - **Recalculate Style**. CSS Object Model Construction (CSSOM). By default, CSS is treated as
-    a render blocking resource, which means that the browser won't render any processed content until the 
-    CSSOM is constructed
-
-- **Paint**
-   - **Layout**. Render Tree construction, position and size calculation
-   - **Paint**. Convert Render Tree to pixels on the screen
-
-
-## Vocabulary
-
-- FOUC - Flash of Unstyled Content
-- jank - is any stuttering, juddering or just plain halting that users see when a site or app isn't keeping up with the refresh rate
 
 
 ## Resources
@@ -94,6 +62,8 @@ The output of the layout process is a **box model**, which precisely captures th
 
 [pointer-events: none](https://www.thecssninja.com/css/pointer-events-60fps) -  Allow avoiding unnecessary paints through disabling hover effects as the user scrolls
 
+
+*Want a definitive list of which CSS properties trigger layout, paint, or composite?* Check out [CSS Triggers](https://csstriggers.com/).
 
 ## Strategies
 
