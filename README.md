@@ -1,3 +1,11 @@
+
+- 🍋 - Scripting
+- 🔵 - Loading
+- 🍏 - Painting
+- 🍆 - Rendering
+
+
+
 ## Repaint
 
 ![Repaint Timeline Example](javascript/repaint/repaint.png)
