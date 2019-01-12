@@ -21,13 +21,15 @@
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-construction.png)
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-tree.png)
 
-## Render-tree
+## Render-tree (Reflow)
 - 🍆 The DOM and CSSOM trees are combined to form the render tree.
 - 🍆 Render tree contains only the nodes required to render the page.
 - 🍆 Layout computes the exact position and size of each object.
 - 🍏 The last step is paint, which takes in the final render tree and renders the pixels to the screen.
 
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png)
+
+Up to this point we've calculated which nodes should be visible and their computed styles, but we have not calculated their exact position and size within the viewport of the device---that's the **layout** stage, also known as **reflow**.
 
 ## Repaint
 
