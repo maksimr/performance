@@ -1,8 +1,8 @@
 
-- 🍋 - Scripting
 - 🔵 - Loading
-- 🍏 - Painting
+- 🍋 - Scripting
 - 🍆 - Rendering
+- 🍏 - Painting
 
 
 **TL;DR**
@@ -38,7 +38,8 @@ The output of the layout process is a **box model**, which precisely captures th
 
 - 🔵 **Parse HTML** - HTML markup is transformed into a Document Object Model (*DOM*)
 - 🍆 **Recalculate Style** - CSS markup is transformed into a CSS Object Model (*CSSOM*)
-- 🍆 **Layout** - The DOM and CSSOM trees are combined to form the *render tree*
+- 🍆 **Layout** - The "Layout" event captures the *render tree* construction, position, and size calculation
+- 🍏 **Paint** - Convert the render tree to pixels on the screen.
 
 ## Repaint
 
