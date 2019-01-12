@@ -6,11 +6,11 @@
 
 
 **TL;DR**
-- 🔵 HTML markup is transformed into a Document Object Model (DOM)
-- 🍆 CSS markup is transformed into a CSS Object Model (CSSOM).
-- 🍆 The DOM and CSSOM trees are combined to form the *Render Tree*.
-- 🍆 Layout computes the exact position and size of each object.
-- 🍏 The last step is paint, which takes in the final render tree and renders the pixels to the screen.
+- 🔵 Process HTML markup and build the *DOM* tree.
+- 🍆 Process CSS markup and build the *CSSOM* tree.
+- 🍆 Combine the DOM and CSSOM into a *Render* tree.
+- 🍆 Run *Layout* on the render tree to compute geometry of each node.
+- 🍏 *Paint* the individual nodes to the screen.
 
 
 ## Document Object Model (DOM)
