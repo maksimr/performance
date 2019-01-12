@@ -33,6 +33,8 @@ Up to this point we've calculated which nodes should be visible and their comput
 
 The output of the layout process is a **box model**, which precisely captures the exact position and size of each element within the viewport: *all of the relative measurements are converted to absolute pixels on the screen*.
 
+![image](https://user-images.githubusercontent.com/616193/51072688-7fa4c400-1675-11e9-82e0-2e9764ce17f0.png)
+
 ## Repaint
 
 ![Repaint Timeline Example](javascript/repaint/repaint.png)
