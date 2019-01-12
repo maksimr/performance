@@ -6,9 +6,9 @@
 
 
 **TL;DR**
-- 🔵Bytes → characters → tokens → nodes → object model.
-- 🔵HTML markup is transformed into a Document Object Model (DOM); CSS markup is transformed into a CSS Object Model (CSSOM).
-- 🔵DOM and CSSOM are independent data structures.
+- 🔵 Bytes → characters → tokens → nodes → object model.
+- 🔵 HTML markup is transformed into a Document Object Model (DOM); CSS markup is transformed into a CSS Object Model (CSSOM).
+- 🔵 DOM and CSSOM are independent data structures.
 
 
 ## Document Object Model (DOM)
@@ -22,10 +22,10 @@
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-tree.png)
 
 ## Render-tree
-- 🍆The DOM and CSSOM trees are combined to form the render tree.
-- 🍆Render tree contains only the nodes required to render the page.
-- 🍆Layout computes the exact position and size of each object.
-- 🍏The last step is paint, which takes in the final render tree and renders the pixels to the screen.
+- 🍆 The DOM and CSSOM trees are combined to form the render tree.
+- 🍆 Render tree contains only the nodes required to render the page.
+- 🍆 Layout computes the exact position and size of each object.
+- 🍏 The last step is paint, which takes in the final render tree and renders the pixels to the screen.
 
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png)
 
