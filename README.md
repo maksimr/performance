@@ -31,6 +31,8 @@
 
 Up to this point we've calculated which nodes should be visible and their computed styles, but we have not calculated their exact position and size within the viewport of the device---that's the **layout** stage, also known as **reflow**.
 
+The output of the layout process is a **box model**, which precisely captures the exact position and size of each element within the viewport: *all of the relative measurements are converted to absolute pixels on the screen*.
+
 ## Repaint
 
 ![Repaint Timeline Example](javascript/repaint/repaint.png)
