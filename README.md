@@ -36,6 +36,10 @@ The output of the layout process is a **box model**, which precisely captures th
 
 ![image](https://user-images.githubusercontent.com/616193/51072688-7fa4c400-1675-11e9-82e0-2e9764ce17f0.png)
 
+- 🔵 **Parse HTML** - HTML markup is transformed into a Document Object Model (*DOM*)
+- 🍆 **Recalculate Style** - CSS markup is transformed into a CSS Object Model (*CSSOM*)
+- 🍆 **Layout** - The DOM and CSSOM trees are combined to form the *render tree*
+
 ## Repaint
 
 ![Repaint Timeline Example](javascript/repaint/repaint.png)
