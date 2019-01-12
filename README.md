@@ -4,9 +4,6 @@
 - 🍆 - Rendering
 - 🍏 - Painting
 
-- *FOUC* - Flash of Unstyled Content
-- *jank* - is any stuttering, juddering or just plain halting that users see when a site or app isn't keeping up with the refresh rate
-
 
 **TL;DR**
 - 🔵 HTML markup is transformed into a Document Object Model (DOM)
@@ -66,10 +63,12 @@ The output of the layout process is a **box model**, which precisely captures th
 *Want a definitive list of which CSS properties trigger layout, paint, or composite?* Check out [CSS Triggers](https://csstriggers.com/).
 
 ## Strategies
-
 - [PRPL](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
 
 
 ## Tools
-
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+
+## Vocabulary
+- *FOUC* - Flash of Unstyled Content
+- *jank* - is any stuttering, juddering or just plain halting that users see when a site or app isn't keeping up with the refresh rate
