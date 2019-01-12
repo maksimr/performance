@@ -35,10 +35,11 @@ The output of the layout process is a **box model**, which precisely captures th
 ![image](https://user-images.githubusercontent.com/616193/51072688-7fa4c400-1675-11e9-82e0-2e9764ce17f0.png)
 
 - 🔵 **Parse HTML** - HTML markup is transformed into a Document Object Model (*DOM*)
-- 🍆 **Recalculate Style** - CSS markup is transformed into a CSS Object Model (*CSSOM*)
+- 🍆 **Recalculate Style/Update Layout Tree** - CSS markup is transformed into a CSS Object Model (*CSSOM*)
 - 🍆 **Layout** - *Render tree* construction, position, and size calculation
 - 🍏 **Paint** - Convert the render tree to pixels on the screen.
 
+**Recalculate Styles** - is [deprecated](https://github.com/chromium/chromium/blob/fd11538737843611859d7b40a1a037e2e1781309/third_party/blink/renderer/devtools/front_end/timeline_model/TimelineModel.js#L1179) and would be replaced by **Update Layout Tree**
 
 
 ## Resources
