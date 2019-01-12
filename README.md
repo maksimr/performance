@@ -5,6 +5,12 @@
 - 🍆 - Rendering
 
 
+**TL;DR**
+- Bytes → characters → tokens → nodes → object model.
+- HTML markup is transformed into a Document Object Model (DOM); CSS markup is transformed into a CSS Object Model (CSSOM).
+- DOM and CSSOM are independent data structures.
+
+
 ## Document Object Model (DOM)
 
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/full-process.png)
