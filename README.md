@@ -5,6 +5,16 @@
 - 🍆 - Rendering
 
 
+## Document Object Model (DOM)
+
+![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/full-process.png)
+
+
+## CSS Object Model (CSSOM)
+
+![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-construction.png)
+![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-tree.png)
+
 
 ## Repaint
 
