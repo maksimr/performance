@@ -23,7 +23,7 @@ By default, CSS is treated as a render blocking resource, which means that the b
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-construction.png)
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-tree.png)
 
-## Render-tree (Reflow)
+## Render-tree (Reflow/Layout)
 Render tree contains only the nodes required to render the page.
 
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png)
@@ -38,6 +38,8 @@ The output of the layout process is a **box model**, which precisely captures th
 - 🍆 **Recalculate Style** - CSS markup is transformed into a CSS Object Model (*CSSOM*)
 - 🍆 **Layout** - *Render tree* construction, position, and size calculation
 - 🍏 **Paint** - Convert the render tree to pixels on the screen.
+
+Triger layout immediate when access properties like `offsetHeight`, `scrollHeight` etc.
 
 
 ## Resources
